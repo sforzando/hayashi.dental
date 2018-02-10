@@ -1,0 +1,6 @@
+<Files ~ "^\.ht">
+  deny from all
+</Files>
+
+# Directory List
+Options -Indexes
