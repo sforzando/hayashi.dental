@@ -1,14 +1,59 @@
 hayashi.dental
 ========
 
-## Color
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [References](#references)
+	- [Photo](#photo)
+- [Develop](#develop)
+	- [Color](#color)
+- [Deploy](#deploy)
+	- [using Git-FTP](#using-git-ftp)
+		- [Install](#install)
+			- [MacOS](#macos)
+		- [Initialize](#initialize)
+		- [Upload](#upload)
+- [ToDo](#todo)
+	- [HIGH / FIXME](#high-fixme)
+	- [MID / TODO](#mid-todo)
+	- [LOW / XXX](#low-xxx)
+
+<!-- /TOC -->
+
+## References
+### Photo
+* http://hayashi.dental/photo/
+
+## Develop
+### Color
 Green: #188080
 Blue: #304080
 Red: #801818
 
-# ToDo
-- [x] add "完全予約制"
-- [x] add blog (https://ameblo.jp/884dental/) link
-- [x] add 林遼's introduction "・東京歯科大学非常勤講師（2015）・東京医科歯科大学非常勤講師（2017～）"
-- [x] rewrite access message "・千曲市上山田温泉で開業しております林歯科医院です。 H27年12月に隣接の駐車場に新診療所が完成いたしました。新診療所は木曽檜を主に使用し、檜の香りの癒しの空間を目指しております。"
-- [x] change address "1-34-9" to "1-34-6"
+## Deploy
+### using Git-FTP
+#### Install
+##### MacOS
+```
+$ brew install git-ftp
+```
+
+#### Initialize
+```
+$ git config git-ftp.url ftp://ホスト名/該当するフォルダまでのパス
+$ git config git-ftp.user ユーザー名
+$ git config git-ftp.password パスワード
+$ git ftp init -v
+```
+
+#### Upload
+```
+$ git ftp push
+```
+
+## ToDo
+### HIGH / FIXME
+
+### MID / TODO
+
+### LOW / XXX
