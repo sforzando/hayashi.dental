@@ -55,5 +55,6 @@ $ git ftp push
 ### HIGH / FIXME
 
 ### MID / TODO
+- [ ] Auto deploy using cron + git pull
 
 ### LOW / XXX
