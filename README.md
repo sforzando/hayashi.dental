@@ -31,30 +31,11 @@ Blue: #304080
 Red: #801818
 
 ## Deploy
-### using Git-FTP
-#### Install
-##### MacOS
-```
-$ brew install git-ftp
-```
-
-#### Initialize
-```
-$ git config git-ftp.url ftp://ホスト名/該当するフォルダまでのパス
-$ git config git-ftp.user ユーザー名
-$ git config git-ftp.password パスワード
-$ git ftp init -v
-```
-
-#### Upload
-```
-$ git ftp push
-```
 
 ## ToDo
 ### HIGH / FIXME
 
 ### MID / TODO
-- [ ] Auto deploy using cron + git pull
+- [x] Auto deploy using cron + git pull
 
 ### LOW / XXX
