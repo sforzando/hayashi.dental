@@ -8,11 +8,6 @@ hayashi.dental
 - [Develop](#develop)
 	- [Color](#color)
 - [Deploy](#deploy)
-	- [using Git-FTP](#using-git-ftp)
-		- [Install](#install)
-			- [MacOS](#macos)
-		- [Initialize](#initialize)
-		- [Upload](#upload)
 - [ToDo](#todo)
 	- [HIGH / FIXME](#high-fixme)
 	- [MID / TODO](#mid-todo)
@@ -26,11 +21,13 @@ hayashi.dental
 
 ## Develop
 ### Color
-Green: #188080
-Blue: #304080
-Red: #801818
+* Green: #188080
+* Blue:  #304080
+* Red:   #801818
 
 ## Deploy
+This server is updated hourly by remote cron job.
+Check `cron-hourly.sh`.
 
 ## ToDo
 ### HIGH / FIXME
