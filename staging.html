@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-  <title>(STAGING) 林歯科医院 | DENTAL CLINIC HAYASHI</title>
+  <title>(staging) 林歯科医院 | DENTAL CLINIC HAYASHI</title>
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/popup-box.css" rel="stylesheet" type="text/css" media="all" />
   <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.easing.compatibility.js"></script>
+  <script src="js/jquery.easing.1.3.js" defer></script>
+  <script src="js/jquery.easing.compatibility.js" defer></script>
+  <script src="js/jquery.mixitup.min.js" defer></script>
+  <script src="js/jquery.wmuSlider.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta charset="utf-8">
   <meta name="description"
-    content="千曲市上山田温泉で開業しております林歯科医院です。 H27年12月に隣接の駐車場に新診療所が完成いたしました。新診療所は木曽檜を主に使用し、檜の香りの癒しの空間を目指しております。">
+    content="千曲市上山田温泉で開業しております林歯科医院です。 H27年12月に隣接の駐車場に新診療所が完成いたしました。新診療所は木曽檜を主に使用し、檜の香りの癒しの空間を目指して���ります。">
   <meta name="author" content="林歯科医院">
   <!--&#91;if lt IE 9&#93;>
   <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -26,7 +29,6 @@
     function hideURLbar() {
       window.scrollTo(0, 1);
     }
-
   </script>
 </head>
 
@@ -37,7 +39,7 @@
       <div class="header-top">
         <div class="logo">
           <a href="index.html">
-            <img src="images/logo.png" alt="DENTAL CLINIC HAYASHI" />
+            <img src="images/logo.png" alt="DENTAL CLINIC HAYASHI" width="166" height="61" />
           </a>
         </div>
         <div class="cta hidden-xs hidden-sm">
@@ -62,7 +64,6 @@
           $("span.menu").click(function () {
             $(".top-nav ul").slideToggle(500, function () {});
           });
-
         </script>
       </div>
     </div>
@@ -142,13 +143,11 @@
             </article>
           </div>
         </div>
-        <script src="js/jquery.wmuSlider.js"></script>
         <script>
           $('.messagebox').wmuSlider({
             navigationControl: false,
             paginationControl: true
           });
-
         </script>
       </div>
     </div>
@@ -157,7 +156,8 @@
       <div class="banner-grid">
         <div class="col-md-4 grid-banner">
           <a href="#small-dialog" class="popup-with-zoom-anim">
-            <img class="img-responsive" src="images/microscope_429x162.jpg" alt="手術用顕微鏡（マイクロスコープ）" />
+            <!-- img class="img-responsive" src="images/microscope_429x162.jpg" alt="手術用顕微鏡（マイクロスコープ）" / -->
+            <img class="img-responsive" src="images/recruitment_360x136.jpg" alt="求人" />
             <div class="simple simple-sit">
               <span class="plus"> </span>
             </div>
@@ -187,9 +187,9 @@
   <div class="caption-popup">
     <div id="small-dialog" class="mfp-hide innercontent">
       <h1>ACCESS</h1>
-      <iframe
+      <iframe title="map" loading="lazy"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.970814320052!2d138.1407688512532!3d36.482420993123725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601d9c6b2d489dbb%3A0xa6baf0ec8ad08bf2!2z44CSMzg5LTA4MjEg6ZW36YeO55yM5Y2D5puy5biC5LiK5bGx55Sw5rip5rOJ77yR5LiB55uu77yT77yU!5e0!3m2!1sja!2sjp!4v1518246552225"
-        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        width="400" height="300" style="border:0" allowfullscreen></iframe>
       <p>
         休診日: 木日祝
         <br> 住所: 長野県千曲市上山田温泉1-34-6
@@ -218,11 +218,6 @@
     </script>
   </div>
   <!-- /caption-popup -->
-  <!--- pop-up-box ---->
-  <link href="css/popup-box.css" rel="stylesheet" type="text/css" media="all" />
-  <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-  <!--- /pop-up-box ---->
-  <!---->
   <div class="content">
     <div class="container">
       <!-- TOPICS -->
@@ -377,18 +372,6 @@
                 </div>
               </div>
             </div>
-            <!--div class="topics recruitment mix_all" data-cat="recruitment" style="display: inline-block; opacity: 1;">
-              <div class="topics-wrapper ">
-                <img class="img-responsive" src="images/recruitment_360x300.jpg" alt="求人" />
-                <div class="simple-out">
-                  <h4>求人</h4>
-                  <span>January 01, 2016</span>
-                  <p>
-                    リニューアルにつき、歯科衛生士さんを募集しています。詳細は電話もしくはメールでお問い合わせください。
-                  </p>
-                </div>
-              </div>
-            </div-->
           </div>
           <div class="port-grid">
             <div class="topics equipment mix_all" data-cat="equipment" style="display: inline-block; opacity: 1;">
@@ -428,9 +411,22 @@
                 </div>
               </div>
             </div>
+            <div class="topics recruitment mix_all" data-cat="recruitment" style="display: inline-block; opacity: 1;">
+              <div class="topics-wrapper ">
+                <img class="img-responsive" src="images/recruitment_360x300.jpg" alt="求人" />
+                <div class="simple-out">
+                  <h4>求人</h4>
+                  <span>August 30, 2024</span>
+                  <p>
+                    受付 パートさん募集<br>
+                    歯科衛生士 常勤、パートさん募集<br>
+                    詳細は面談にて
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- Script for gallery Here -->
-          <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
           <script type="text/javascript">
             $(document).ready(function () {
               var filterList = {
@@ -472,7 +468,6 @@
               // Run the show!
               filterList.init();
             });
-
           </script>
           <!-- Gallery Script Ends -->
           <div class="clearfix"> </div>
@@ -493,8 +488,13 @@
           <div class="map col-sm-6">
             <!--script type='text/javascript' charset='UTF-8' src='http://map.yahooapis.jp/MapsService/embedmap/V2/?cond=placegenre%3Aaddress%3Bac%3A20218%3Baz%3A13.1.34.9%3B&amp;p=%E9%95%B7%E9%87%8E%E7%9C%8C%E5%8D%83%E6%9B%B2%E5%B8%82%E4%B8%8A%E5%B1%B1%E7%94%B0%E6%B8%A9%E6%B3%891-34-9&amp;ac=20218&amp;az=13.1.34.9&amp;zoom=18&amp;bbox=138.1399053972803%2C36.48184032348599%2C138.14557022271975%2C36.48240104205342&amp;lat=36.48235791&amp;lon=138.14273781&amp;z=18&amp;mode=map&amp;active=true&amp;layer=&amp;home=on&amp;hlat=36.48235791&amp;hlon=138.14273781&amp;pointer=off&amp;pan=off&amp;ei=utf8&amp;v=3&amp;datum=wgs&amp;width=auto&amp;height=360&amp;device=auto&amp;isleft='></script-->
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.9734108656976!2d138.14054921528103!3d36.482358280015205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601d9c6b2c98d685%3A0xdf759b771f3d8f35!2z5pel5pysLCDjgJIzODktMDgyMSDplbfph47nnIzljYPmm7LluILkuIrlsbHnlLDmuKnms4nvvJHkuIHnm67vvJPvvJTiiJLvvJk!5e0!3m2!1sja!2sus!4v1449992728328"
-              width="800" height="600" frameborder="0" style="border: 0" allowfullscreen></iframe>
+              title="map" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.9734108656976!2d138.14054921528103!3d36.482358280015205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601d9c6b2c98d685%3A0xdf759b771f3d8f35!2z5pel5pysLCDjgJIzODktMDgyMSDplbfph47nnIzljYPmm7LluILkuIrlsbHnlLDmuKnms4nvvJHkuIHnm67vvJPvvJTiiJLvvJk!5e0!3m2!1sja!2sus!4v1449992728328"
+              width="800" height="600" style="border: 0" allowfullscreen></iframe>
+          </div>
+          <div class="well col-sm-6">
+            <!-- X -->
+            <a class="twitter-timeline" data-width="585" data-height="300" href="https://twitter.com/884dental?ref_src=twsrc%5Etfw">Tweets by 884dental</a>
+            <script defer src="https://platform.twitter.com/widgets.js"></script>
           </div>
           <div class="contact-bottom well col-sm-6">
             <br />
@@ -585,8 +585,6 @@
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-68932396-1', 'auto');
     ga('send', 'pageview');
-
   </script>
 </body>
-
 </html>
